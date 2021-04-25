@@ -24,7 +24,7 @@ SOFTWARE.
 
 Write-Output "Init NuGet push..."
 
-$output_file = "VPKSoft.VersionCheck\CryptEnvVar.exe"
+$output_file = "NetSoftwareUpdateChecker\CryptEnvVar.exe"
 
 $download_url = "https://www.vpksoft.net/toolset/CryptEnvVar.exe"
 
