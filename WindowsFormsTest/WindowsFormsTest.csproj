@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <Description>Just a simple test application for the NetSoftwareUpdateChecker library.</Description>
+    <Authors>VPKSoft</Authors>
+    <Copyright>Copyright © VPKSoft 2021</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/VPKSoft/NetSoftwareUpdateChecker</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/VPKSoft/NetSoftwareUpdateChecker</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>See: https://github.com/VPKSoft/NetSoftwareUpdateChecker</PackageReleaseNotes>
+    <PackageIcon>vpksoft_logo.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetSoftwareUpdateChecker\NetSoftwareUpdateChecker.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\vpksoft_logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

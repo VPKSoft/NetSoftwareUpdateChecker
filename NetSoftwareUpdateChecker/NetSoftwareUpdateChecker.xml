@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NetSoftwareUpdateChecker</name>
+    </assembly>
+    <members>
+        <member name="T:NetSoftwareUpdateChecker.ExceptionEventArgs">
+            <summary>
+            Event arguments for an event to report exceptions for a class library to the client software.
+            Implements the <see cref="T:System.EventArgs" />
+            </summary>
+            <seealso cref="T:System.EventArgs" />
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.ExceptionEventArgs.Exception">
+            <summary>
+            Gets or sets the exception which occurred.
+            </summary>
+            <value>The exception which occurred.</value>
+        </member>
+        <member name="T:NetSoftwareUpdateChecker.SampleDataProvider">
+            <summary>
+            A class to provide simple sample data for the <see cref="T:NetSoftwareUpdateChecker.UpdateData"/> class.
+            </summary>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.SampleDataProvider.SampleData">
+            <summary>
+            Gets the sample data.
+            </summary>
+            <value>The sample data.</value>
+        </member>
+        <member name="T:NetSoftwareUpdateChecker.UpdateChecker">
+            <summary>
+            A class to check application updates from RESTful endpoint or a JSON file in a WEB server.
+            </summary>
+        </member>
+        <member name="M:NetSoftwareUpdateChecker.UpdateChecker.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetSoftwareUpdateChecker.UpdateChecker"/> class.
+            </summary>
+            <param name="file">A value indicating whether the specified URL points to a file. Otherwise a RESTful endpoint is expected.</param>
+            <param name="url">The URL to download the version data from.</param>
+        </member>
+        <member name="M:NetSoftwareUpdateChecker.UpdateChecker.#ctor(System.Func{System.Threading.Tasks.Task{NetSoftwareUpdateChecker.UpdateData[]}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:NetSoftwareUpdateChecker.UpdateChecker"/> class.
+            </summary>
+            <param name="getVersionDataFunc">The custom get version data function to retrieve the version data.</param>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateChecker.BufferSize">
+            <summary>
+            Gets or sets the size of the buffer for stream data reading.
+            </summary>
+            <value>The size of the buffer for stream data reading.</value>
+        </member>
+        <member name="F:NetSoftwareUpdateChecker.UpdateChecker.ExceptionOccurred">
+            <summary>
+            An event which occurs if an exception occurs during the update check.
+            </summary>
+        </member>
+        <member name="M:NetSoftwareUpdateChecker.UpdateChecker.GetUpdateData">
+            <summary>
+            Gets the software update data.
+            </summary>
+            <returns>The software update data.</returns>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateChecker.HttpClient">
+            <summary>
+            Gets the HTTP client to use to get JSON data for the class.
+            </summary>
+            <value>The HTTP client to use to get JSON data for the class.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateChecker.GetVersionDataFunc">
+            <summary>
+            Gets or sets the get version data fetch function.
+            </summary>
+            <value>The get version data fetch function.</value>
+        </member>
+        <member name="T:NetSoftwareUpdateChecker.UpdateData">
+            <summary>
+            A class for one version entry to included in a JSON data containing the software update information.
+            </summary>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.SoftwareName">
+            <summary>
+            Gets or sets the name of the software.
+            </summary>
+            <value>The name of the software.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.SoftwareVersion">
+            <summary>
+            Gets or sets the software version.
+            </summary>
+            <value>The software version.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.SoftwareVersionString">
+            <summary>
+            Gets or sets the software version string, i.e. "beta2".
+            </summary>
+            <value>The software version string.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.VersionTitle">
+            <summary>
+            Gets or sets the version title. 
+            </summary>
+            <value>The version title.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.VersionChanges">
+            <summary>
+            Gets or sets the version changes.
+            </summary>
+            <value>The version changes.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.VersionChangesLocalized">
+            <summary>
+            Gets or sets the localized version changes.
+            </summary>
+            <value>The localized version changes.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.ReleaseTime">
+            <summary>
+            Gets or sets the release date and time.
+            </summary>
+            <value>The release date and time.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.DownloadUrl">
+            <summary>
+            Gets or sets the download URL.
+            </summary>
+            <value>The download URL.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.IsDirectDownload">
+            <summary>
+            Gets or sets a value indicating whether the <see cref="P:NetSoftwareUpdateChecker.UpdateData.DownloadUrl"/> is direct download.
+            </summary>
+            <value><c>true</c> if the <see cref="P:NetSoftwareUpdateChecker.UpdateData.DownloadUrl"/> is direct download; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.Copyright">
+            <summary>
+            Gets or sets the copyright.
+            </summary>
+            <value>The copyright.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.LicenseIdentifier">
+            <summary>
+            Gets or sets the license identifier (SPDX).
+            </summary>
+            <value>The license identifier.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.LicenseText">
+            <summary>
+            Gets or sets the license text.
+            </summary>
+            <value>The license text.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.UpdateData.Version">
+            <summary>
+            Gets the version as a <see cref="P:NetSoftwareUpdateChecker.UpdateData.Version"/>.
+            </summary>
+            <value>The version as a <see cref="P:NetSoftwareUpdateChecker.UpdateData.Version"/>.</value>
+        </member>
+        <member name="T:NetSoftwareUpdateChecker.VersionChangeLocalized">
+            <summary>
+            A class to localize version changes.
+            </summary>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.VersionChangeLocalized.Locale">
+            <summary>
+            Gets or sets the locale. I.e. "en", "fi", etc.
+            </summary>
+            <value>The locale.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.VersionChangeLocalized.VersionChanges">
+            <summary>
+            Gets or sets the version changes.
+            </summary>
+            <value>The version changes.</value>
+        </member>
+        <member name="P:NetSoftwareUpdateChecker.VersionChangeLocalized.VersionTitle">
+            <summary>
+            Gets or sets the version title. 
+            </summary>
+            <value>The version title.</value>
+        </member>
+    </members>
+</doc>

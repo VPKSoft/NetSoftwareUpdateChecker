@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Copyright>Copyright © VPKSoft 2021</Copyright>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Authors>VPKSoft</Authors>
+    <Company></Company>
+    <Description>A class library to check application updates from RESTful endpoint or from a JSON file in a WEB server. A custom checker function is also possible.</Description>
+    <PackageIcon>vpksoft_logo.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/VPKSoft/NetSoftwareUpdateChecker</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/VPKSoft/NetSoftwareUpdateChecker</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>See: https://github.com/VPKSoft/NetSoftwareUpdateChecker</PackageReleaseNotes>
+    <PackageTags>update upgrade check</PackageTags>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Files\GitHub\NetSoftwareUpdateChecker\NetSoftwareUpdateChecker\NetSoftwareUpdateChecker.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>C:\Files\GitHub\NetSoftwareUpdateChecker\NetSoftwareUpdateChecker\NetSoftwareUpdateChecker.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\vpksoft_logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
