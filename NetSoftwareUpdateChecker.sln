@@ -3,11 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSoftwareUpdateChecker", "NetSoftwareUpdateChecker\NetSoftwareUpdateChecker.csproj", "{FA4A0640-7EA5-40B0-969D-FD411CDDF653}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetSoftwareUpdateChecker", "NetSoftwareUpdateChecker\NetSoftwareUpdateChecker.csproj", "{FA4A0640-7EA5-40B0-969D-FD411CDDF653}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsTest", "WindowsFormsTest\WindowsFormsTest.csproj", "{0A90406F-222F-4327-A9DD-CEB216DCFC75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsFormsTest", "WindowsFormsTest\WindowsFormsTest.csproj", "{0A90406F-222F-4327-A9DD-CEB216DCFC75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestServer", "TestServer\TestServer.csproj", "{FD4ED591-B4B4-4322-894F-291461E2E36C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestServer", "TestServer\TestServer.csproj", "{FD4ED591-B4B4-4322-894F-291461E2E36C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37BE341D-873A-46C9-80DF-E752D77260F5}"
+	ProjectSection(SolutionItems) = preProject
+		NetSoftwareUpdateChecker.sln.licenseheader = NetSoftwareUpdateChecker.sln.licenseheader
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
