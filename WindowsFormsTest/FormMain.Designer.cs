@@ -140,7 +140,7 @@ namespace WindowsFormsTest
             this.gpRESTDataTest.Size = new System.Drawing.Size(500, 207);
             this.gpRESTDataTest.TabIndex = 2;
             this.gpRESTDataTest.TabStop = false;
-            this.gpRESTDataTest.Text = "File download test";
+            this.gpRESTDataTest.Text = "RESTful API test";
             // 
             // label1
             // 
