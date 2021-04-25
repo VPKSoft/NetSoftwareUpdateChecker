@@ -11,6 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestServer", "TestServer\Te
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{37BE341D-873A-46C9-80DF-E752D77260F5}"
 	ProjectSection(SolutionItems) = preProject
+		.circleci\config.yml = .circleci\config.yml
 		NetSoftwareUpdateChecker.sln.licenseheader = NetSoftwareUpdateChecker.sln.licenseheader
 	EndProjectSection
 EndProject
